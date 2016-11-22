@@ -7,15 +7,19 @@ from time import sleep
 
 while True:
     # valmyndin
-    print("1. Bílar \n2. Samlagning \n3. Skæri, blað, steinn \n4. Strengur \n5. Heiltölur \n6.Teningaspilið Craps"
+    print("1. Bílar \n2. Samlagning \n3. Skæri, blað, steinn \n4. Strengur \n5. Heiltölur \n6. Teningaspilið Craps"
           "\n7. Teningakast \n8. byggingakast \n9. Hætta")
 
-    x1 = input("Veldu valmögu leika: ")
+    x1 = int(input("Veldu valmögu leika: "))
 
     if x1 == 1:
-        Lidur1.Main()
+        print("Lidur 1")
+        l = Lidur1()
+        l.Main()
     elif x1 == 2:
-        Lidur2.main()
+        print("Lidur 2")
+        l2 = Lidur2()
+        l2.main()
     elif x1 == 3:
         print()
     elif x1 == 4:

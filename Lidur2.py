@@ -34,6 +34,4 @@ class Lidur2:
         elif x1 < 0:
             self.nidur(x1)
 
-Lidur2.main()
-
 
