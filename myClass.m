@@ -1,7 +1,23 @@
 
-class myClass{
-	-(void)Main
-	{
-		[print:"Halló Daniel"];
-	}
+@interface myClass : NSObject 
+
+
+@end
+
+@implementation myClass
+
+-(void)Print
+{
+    NSLog(@"HallÃ³ Daniel!");
+}
+
+@end
+
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        myClass *c = [myClass init];
+        [c Print];
+    }
+    return 0;
 }
