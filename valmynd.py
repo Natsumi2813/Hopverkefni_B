@@ -4,7 +4,7 @@
 from time import sleep
 
 while True:
-
+    # valmyndin
     print("1. Bílar \n2. Samlagning \n3. Skæri, blað, steinn \n4. Strengur \n5. Heiltölur \n 6.Teningaspilið Craps"
           "\n7. Teningakast \n8. byggingakast \n9. Hætta")
 
@@ -29,3 +29,4 @@ while True:
     elif x1 == 9:
         print("Slekk á forriti")
         sleep(1)
+        quit()
