@@ -35,8 +35,3 @@ class Lidur2:
             self.nidur(x1)
 
 
-
-
-l = Lidur2()
-l.main()
-
