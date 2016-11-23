@@ -1,5 +1,5 @@
 # lidur 2 gert af Kristjáni 22/11/2016
-
+# Kristján 23/11/2016 09:19
 def neg(x):
     abs(x)
     return(-x)

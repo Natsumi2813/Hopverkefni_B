@@ -1,4 +1,5 @@
 # Valmynd gert af Kristjáni 22/11/2016 13:22
+# Kristján 23/11/2016 09:19
 
 # Imports
 from Lidur1 import *
