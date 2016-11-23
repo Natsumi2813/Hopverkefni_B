@@ -3,12 +3,13 @@
 # Imports
 from Lidur1 import *
 from Lidur2 import *
+from korri import *
 from time import sleep
 
 while True:
-    # valmyndin
-    print("1. Bílar \n2. Samlagning \n3. Skæri, blað, steinn \n4. Strengur \n5. Heiltölur \n6. Teningaspilið Craps"
-          "\n7. Teningakast \n8. byggingakast \n9. Hætta")
+    # valmyndid
+    k = korri()
+    k.valmynd()
 
     x1 = int(input("Veldu valmögu leika: "))
 
