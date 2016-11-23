@@ -80,12 +80,16 @@ class Lidur3:
         print("Leikurinn var spilaður " + str(self.data.leikinn) + " sinnum");
     def Main(self):
         self.data = Lidur3_data();
-        self.data.setNafnOgAldur(input("Sláðu inn nafnið þitt: "), int(input("Sláðu inn aldurinn þinn: ")));
+        self.data.setNafnOgAldur(input("Sláðu inn nafnið þitt: "), intInput("Sláðu inn aldurinn þinn: "));
         while (True):
             self.PrintVal();
-            val = int(input(": "));
+            val = intInput(": ");
             if (val == 4):
                 if (self.data.leikinn > 0):
                     self.printStig();
                 break;
             self.processVal(val);
+
+
+l = Lidur3();
+l.Main();
