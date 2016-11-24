@@ -1,9 +1,8 @@
-1. Bílar 
+1. Bï¿½lar 
 2. Samlagning 
-3. Skæri, blað, steinn 
+3. Skï¿½ri, blaï¿½, steinn 
 4. Strengur 
-5. Heiltölur 
-6. Teningaspilið Craps
-7. Teningakast 
-8. byggingaupplýsingar 
-9. Hætta
+5. Heiltï¿½lur 
+6. Teningaspiliï¿½ Craps
+7. Teningakast
+8. Hï¿½tta
