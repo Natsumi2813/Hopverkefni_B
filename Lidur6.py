@@ -20,7 +20,7 @@ class Lidur6:
     def KastaTeningum(self):
         self.geymsla.teningur1.kasta();
         print("Þú fékkst " + self.teningur1.hlid + " á fyrsta teningnum");
-        sleep(1);
+        input("Ýttu á enter til að kasta seinni teningnum");
         self.geymsla.teningur2.kasta();
         print("Þú fékkst " + self.teningur2.hlid + " á seinni teningnum");
 
@@ -28,14 +28,15 @@ class Lidur6:
         self.KastaTeningum();
         summa = self.teningur1.hlid + self.teningur2.hlid;
         if (summa in [7, 11]):
-            print("Þú vannst af því að summan var" + str(summa));
+            print("Þú vannst af því að summan var summuna " + str(summa));
             return True;
         if (summa in [4, 5, 6, 8, 9, 10]):
+            print("Summan bættist við stigin þín af því að þú varst með summuna" + str(summa));
             self.geymsla.stig = summa;
             self.geymsla.fyrstaKastStig = summa;
             return False;
         if (summa in [2, 3, 12 ]):
-            print("Þú tapaðir af því að þú varst með " + str(summa));
+            print("Þú tapaðir af því að þú varst með summuna " + str(summa));
             return True;
 
     def Main(self):
@@ -45,6 +46,8 @@ class Lidur6:
             while (True):
                 if (self.FyrstaKast()):
                     break;
+                while (True):
+                    self.KastaTeningum();
 
             if (not endurtaka("Villtu spila leikinn aftur")):
                 break;
