@@ -77,6 +77,7 @@ class Lidur3:
         print("Þú heitir " + self.data.nafn + " og þú ert " + str(self.data.aldur)  + " ára");
         print("Þú vannst " + str(self.data.notnadiVann) + " sinnum");
         print("Tölvan vann " + str(self.data.tolvaVann) + " sinnum");
+        print("Það var jafntefli " + str(self.data.jafntefli));
         print("Leikurinn var spilaður " + str(self.data.leikinn) + " sinnum");
     def Main(self):
         self.data = Lidur3_data();
