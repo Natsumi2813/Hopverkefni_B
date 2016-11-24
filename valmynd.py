@@ -7,6 +7,7 @@ from Lidur2 import *
 from Lidur3 import *
 from Lidur4 import *
 from Lidur5 import *
+from Lidur6 import *
 from Lidur7 import *
 from korri import *
 from time import sleep
@@ -39,7 +40,9 @@ while True:
         l5 = Lidur5()
         l5.Main()
     elif x1 == 6:
-        print()
+        print("Lidur 6")
+        l6 = Lidur6();
+        l6.Main();
     elif x1 == 7:
         print("Lidur 7")
         l7 = Lidur7()

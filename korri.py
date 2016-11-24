@@ -2,5 +2,5 @@
 
 class korri:
     def valmynd(self):
-        with open("mainmenu.txt") as f:
+        with open("mainmenu.txt", encoding='utf-8') as f:
             print(f.read())
