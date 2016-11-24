@@ -10,7 +10,7 @@ class Lidur4:
                 x = x.replace(i, '*')
         return x
     def main(self):
-        x = str(input("Slæaðu inn setningu: "))
+        x = str(input("Sláðu inn setningu: "))
         print(self.breiti_streng(x))
 
 

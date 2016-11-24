@@ -90,7 +90,3 @@ class Lidur3:
                     self.printStig();
                 break;
             self.processVal(val);
-
-
-l = Lidur3();
-l.Main();
