@@ -1,4 +1,5 @@
 #Liður 3 - Skæri, blað, steinn. Gert af Guðmundi 22/11/2016 14:00
+#edit 24/11/2016
 from gudmundur_func import *
 from enum import Enum
 from random import randint

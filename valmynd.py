@@ -6,6 +6,7 @@ from Lidur1 import *
 from Lidur2 import *
 from Lidur3 import *
 from Lidur4 import *
+from Lidur5 import *
 from korri import *
 from time import sleep
 
