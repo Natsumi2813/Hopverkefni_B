@@ -3,7 +3,9 @@ from gudmundur_func import *
 
 class Lidur1:
     def fjoldiBila(self, fjoldi):
-        return (fjoldi // 5) + 1;
+        if (fjoldi%5 != 0):
+            return ((fjoldi//5) + 1);
+        return (fjoldi // 5);
     def fjoldiISidasta(self, fjoldi):
         return (fjoldi%5)
     def Main(self):
