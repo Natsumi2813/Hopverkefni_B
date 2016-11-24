@@ -7,6 +7,17 @@ def intInput(text = ""):
 def avg(tolur):
     return (sum(tolur) / len(tolur));
 
+
+def endurtaka(texti="Villtu endurtaka þetta: "):
+    svar = "";
+    while (True):
+        if (svar != ""):
+            print(svar + " er ekki gilt svar!");
+        svar = input(texti).lower();
+        if ("já" in svar or "nei" in svar):
+            break;
+    return ("já" in svar);
+
 class String(str):
     def ToInt(self):
         return int(self);
