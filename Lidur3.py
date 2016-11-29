@@ -34,6 +34,7 @@ class Lidur3_data:
             return;
 
 class Lidur3:
+    #main classinn fyrir liðinn
     data = Lidur3_data();
     def PrintVal(self):
         #prenstar út valmyndina
@@ -57,6 +58,7 @@ class Lidur3:
         elif (val == 3):
             return "Tölvan valdi stein";
     def processVal(self, val):
+        #prentur ú hver vann og breytir breitunum
         compVal = self.getCompVal();
         print(self.getCompValStr(compVal));
         if (val == 1 and compVal == 2):
@@ -81,6 +83,7 @@ class Lidur3:
             print("Það er jafntefli");
             self.data.update(winner.jafntefli);
     def printStig(self):
+        #prentar út stigatöfluna
         print("Þú heitir " + self.data.nafn + " og þú ert " + str(self.data.aldur)  + " ára");
         print("Þú vannst " + str(self.data.notnadiVann) + " sinnum");
         print("Tölvan vann " + str(self.data.tolvaVann) + " sinnum");
@@ -93,7 +96,9 @@ class Lidur3:
             self.PrintVal();
             val = intInput(": ");
             if (val == 4):
+                # hætta ef valið er 4
                 if (self.data.leikinn > 0):
+                    #prenta stigatöfluna ef leikurinn var leikinn allavega einu sinni
                     self.printStig();
                 break;
             self.processVal(val);

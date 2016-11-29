@@ -6,6 +6,7 @@ class Lidur5:
     def Main(self):
         tolur = [];
         for i in range(7):
+            #bæta við tölu í listann að vali notanda
             tolur.append(intInput("Sláðu inn tölu " + str(i + 1) + ": "));
         print("Minnsta talan er "+ str(min(tolur)));
         print("Stærsta talan er " + str(max(tolur)));

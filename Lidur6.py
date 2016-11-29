@@ -4,11 +4,13 @@ from random import randint
 from time import sleep
 
 class Teningur:
+    #teninga classinn
     hlid = 0;
     def kasta(self):
         self.hlid = randint(1, 6);
 
 class Lidur6_geymsla:
+    #classi til að geyma teningana og stigin
     teningur1 = Teningur();
     teningur2 = Teningur();
     stig = 0;
@@ -24,6 +26,7 @@ class Lidur6:
     geymsla = Lidur6_geymsla();
 
     def KastaTeningum(self):
+        #katar báðum teningunum
         input("Ýttu á enter til að kasta fyrri teningnum");
         self.geymsla.teningur1.kasta();
         print("Þú fékkst " + str(self.geymsla.teningur1.hlid) + " á fyrsta teningnum");
@@ -48,20 +51,25 @@ class Lidur6:
             return True;
 
     def summaTeninganna(self):
+        #returnar summu tenings 1 ig tenings 2
         return (self.geymsla.teningur1.hlid + self.geymsla.teningur2.hlid);
 
     def Main(self):
         print("******Craps******");
         while (True):
+            #búa til nýtt instance af Lidur6_geymsla til þess að reseta allar breiturnar
             self.geymsla = Lidur6_geymsla();
             while (True):
                 if (self.summaTeninganna() != 0):
+                    # Fara út úr while loopinu ef það er búið að kasta teningi
                     break;
                 if (self.FyrstaKast()):
+                    # Fara út úr while loopinu ef notandinn tapaði
                     break;
                 while (True):
                     self.KastaTeningum();
                     if (self.summaTeninganna() == self.geymsla.fyrstaKastStig):
+                        #ef stigin eru jafn mörg í fyrsta kasti
                         print("Þú vannst");
                         break;
                     if (self.summaTeninganna() == 7):
