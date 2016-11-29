@@ -9,7 +9,7 @@ class Lidur4:
             if i in x:
                 x = x.replace(i, '*')
         return x
-    def main(self):
+    def Main(self):
         x = str(input("Sláðu inn streng: "))
         print(self.breiti_streng(x))
 

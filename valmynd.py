@@ -1,5 +1,6 @@
 # Valmynd gert af Kristjáni 22/11/2016 13:22
 # Kristján 23/11/2016 09:19
+# Guðmundur 29/11/2016 13:56
 
 # Imports
 from Lidur1 import *
@@ -12,6 +13,18 @@ from Lidur7 import *
 from korri import *
 from time import sleep
 
+def run(lidur):
+    if (lidur < 1 or lidur > 8):
+        print("Valmöguleikinn er ekki á milli 1 og 8")
+        return
+    if (lidur == 8):
+        print("Slekk á forriti")
+        sleep(1)
+        quit()
+    print("Liður " + str(lidur));
+    code = compile("l = Lidur" + str(lidur) + "(); l.Main();", 'fakemodule', 'exec');
+    exec(code);
+
 while True:
     # valmyndid
     k = korri()
@@ -19,35 +32,4 @@ while True:
 
     x1 = int(input("Veldu valmögu leika: "))
 
-    if x1 == 1:
-        print("Lidur 1")
-        l = Lidur1()
-        l.Main()
-    elif x1 == 2:
-        print("Lidur 2")
-        l2 = Lidur2()
-        l2.main()
-    elif x1 == 3:
-        print("Lidur 3")
-        l3 = Lidur3()
-        l3.Main()
-    elif x1 == 4:
-        print("lidur 4")
-        l4 = Lidur4()
-        l4.main()
-    elif x1 == 5:
-        print("lidur 5")
-        l5 = Lidur5()
-        l5.Main()
-    elif x1 == 6:
-        print("Lidur 6")
-        l6 = Lidur6();
-        l6.Main();
-    elif x1 == 7:
-        print("Lidur 7")
-        l7 = Lidur7()
-        l7.main()
-    elif x1 == 8:
-        print("Slekk á forriti")
-        sleep(1)
-        quit()
+    run(x1)

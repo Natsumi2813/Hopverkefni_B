@@ -23,7 +23,7 @@ class Lidur2:
             else:
                 print(" (-1)", end="")
         print(" Gefur töluna", neg(summa))
-    def main(self):
+    def Main(self):
         x1 = int(input("Sláðu inn tölu: "))
         if x1 == 0:
             print("Takk fyrir að nota forritið")

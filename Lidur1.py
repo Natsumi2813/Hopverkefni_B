@@ -3,10 +3,12 @@ from gudmundur_func import *
 
 class Lidur1:
     def fjoldiBila(self, fjoldi):
+        #returnar fjölda bíla
         if (fjoldi%5 != 0):
             return ((fjoldi//5) + 1);
         return (fjoldi // 5);
     def fjoldiISidasta(self, fjoldi):
+        #returnar fjjöla í síðasta bílnum
         return (fjoldi%5)
     def Main(self):
         fjoldi = intInput("Hvað eru margir skráðir í ferðina? ");

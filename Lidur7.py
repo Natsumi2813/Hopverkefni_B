@@ -48,7 +48,7 @@ class Lidur7:
         self.hve_oft3()
         self.heildar_summa()
         self.medaltal()
-    def main(self):
+    def Main(self):
         self.ut_prent()
         self.ut_reikningar()
         print("Listin óraðaður", *gemsla.suman)
