@@ -9,6 +9,8 @@ class Lidur1:
         return (fjoldi // 5);
     def fjoldiISidasta(self, fjoldi):
         #returnar fjjöla í síðasta bílnum
+        if (fjoldi%5 == 0):
+            return 5;
         return (fjoldi%5)
     def Main(self):
         fjoldi = intInput("Hvað eru margir skráðir í ferðina? ");
